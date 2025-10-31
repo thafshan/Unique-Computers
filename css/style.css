@@ -251,27 +251,165 @@ a:visited {
 .contact form .btn:hover { background:#4ca3e0; transform:translateY(-2px); }
 
 /* ==================== FOOTER ==================== */
-.footer { width:100%; background:#222; color:#fff; padding:60px 40px 30px; text-align:left; font-family:sans-serif; }
-.footer .box-container { display:flex; flex-wrap:wrap; justify-content:space-between; gap:30px; }
-.footer .box { flex:1 1 220px; min-width:200px; }
-.footer .box h3 { font-size:1.2rem; color:rgb(73,184,253); margin-bottom:20px; text-transform:uppercase; letter-spacing:1px; }
-.footer .box .link { display:flex; align-items:center; gap:8px; color:#fff; text-decoration:none; margin-bottom:10px; transition:color 0.3s ease; }
-.footer .box .link i { color:rgb(73,184,253); transition: color 0.3s ease; margin-right:8px; }
-.footer .box .link:hover { color: rgb(73,184,253); }
-.footer .box form { display:flex; gap:10px; margin-top:10px; }
-.footer .box form .email { flex:1; padding:10px 15px; border-radius:5px; border:none; outline:none; }
-.footer .box form .btn { padding:10px 15px; background:rgb(73,184,253); color:#fff; border-radius:5px; cursor:pointer; font-weight:600; text-transform:uppercase; transition:background 0.3s ease, transform 0.3s ease; }
-.footer .box form .btn:hover { background:#4ca3e0; transform:translateY(-2px); }
-.footer .box .share { margin-top:15px; display:flex; gap:10px; }
-.footer .box .share a { display:inline-block; width:35px; height:35px; background:#444; color:#fff; border-radius:50%; text-align:center; line-height:35px; font-size:1rem; transition:all 0.3s ease; }
-.footer .box .share a:hover { transform:translateY(-3px); }
-.footer .box .share a.fa-facebook-f:hover { background:#1877f2; }
-.footer .box .share a.fa-twitter:hover { background:#1da1f2; }
-.footer .box .share a.fa-instagram:hover { background:#e1306c; }
-.footer .box .share a.fa-linkedin:hover { background:#0077b5; }
-.footer hr { border:0; height:1px; background:#444; margin:20px 0; }
-.footer .credit { text-align:center; margin-top:20px; font-size:0.9rem; color:#bbb; }
-.footer .credit span { color:rgb(73,184,253); font-weight:600; }
+/* Footer container */
+.footer {
+  width: 100%;
+  background: #222;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+/* Flex container for footer sections */
+.footer > .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Footer sections */
+.footer > .box-container > .box {
+  flex: 1 1 180px;
+  min-width: 150px;
+}
+
+/* Section titles */
+.footer > .box-container > .box > h3 {
+  font-size: 1.2rem;
+  color: rgb(73, 184, 253);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Links */
+.footer > .box-container > .box > .link {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer > .box-container > .box > .link > i {
+  color: rgb(73, 184, 253);
+  margin-right: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.footer > .box-container > .box > .link:hover {
+  color: rgb(73, 184, 253);
+}
+
+/* Opening Hours */
+.footer > .box-container > .box > p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.footer > .box-container > .box > p > span:first-child {
+  color: rgb(73, 184, 253);
+  width: 100px;
+  text-transform: capitalize;
+}
+
+.footer > .box-container > .box > p > span:last-child {
+  color: #222;
+  text-align: right;
+}
+
+/* Newsletter form */
+.footer > .box-container > .box > form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer > .box-container > .box > form > .email {
+  flex: 1 1 150px;
+  min-width: 120px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.footer > .box-container > .box > form > .btn {
+  padding: 10px 15px;
+  background: rgb(73, 184, 253);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect only for newsletter button */
+.footer > .box-container > .box > form > .btn:hover {
+  background: #4ca3e0;
+  transform: translateY(-2px);
+}
+
+/* Social icons */
+.footer > .box-container > .box > .share {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer > .box-container > .box > .share > a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.footer > .box-container > .box > .share > a:hover {
+  transform: translateY(-3px);
+}
+
+.footer > .box-container > .box > .share > a.fa-facebook-f:hover { background: #1877f2; }
+.footer > .box-container > .box > .share > a.fa-twitter:hover { background: #1da1f2; }
+.footer > .box-container > .box > .share > a.fa-instagram:hover { background: #e1306c; }
+.footer > .box-container > .box > .share > a.fa-linkedin:hover { background: #0077b5; }
+
+/* Footer credit */
+.footer > .credit {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer > .credit > span {
+  color: rgb(73, 184, 253);
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer > .box-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer > .box-container > .box > p > span:first-child {
+    width: 120px;
+  }
+}
 
 /* ==================== DROPDOWN ==================== */
 .dropdown { position:relative; }
