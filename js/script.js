@@ -16,3 +16,26 @@ window.onscroll = () => {
       document.querySelector('.navbar').classList.remove('active');
    }
 };
+
+// dropdown bars edit 
+// Dropdown click logic
+document.querySelectorAll(".dropdown > a").forEach(drop => {
+  drop.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    let parent = this.parentElement;
+    parent.classList.toggle("active");
+
+    // close others
+    document.querySelectorAll(".dropdown").forEach(d => {
+      if (d !== parent) d.classList.remove("active");
+    });
+  });
+});
+
+function scrollGallery(val) {
+  document.querySelector(".gallery-container").scrollBy({
+    left: val,
+    behavior: "smooth"
+  });
+}
